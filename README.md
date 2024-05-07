@@ -17,3 +17,6 @@ Graphical Representations: Plans to include ASCII or simple graphical representa
 Interactive Mode: A more interactive command-line interface that will guide users through input and offer more direct control over the types of calculations performed.
 Extended Interpretations: Expanding the scope of textual interpretations and integrating them with cultural, historical, and psychological insights into astrology.
 StellarScript is ideal for professional astrologers requiring detailed calculations, astrology students seeking to understand the mechanics behind the charts, and technology enthusiasts interested in the intersection of computation and ancient science. As an open-source project, it invites collaboration and innovation, continually adapting and expanding to meet the diverse needs of its users.
+
+
+python3 StarPie.py $date $time $latitude $longitude
