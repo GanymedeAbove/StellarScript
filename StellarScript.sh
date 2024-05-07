@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Define the project directory
-project_dir="Mybirthchart"
+# Navigate to the directory of the script
+cd "$(dirname "$0")"
 
 # Function to check and install Python, pip, and virtualenv
 install_python_deps() {
@@ -33,8 +33,8 @@ setup_environment() {
     echo "Setting up the project environment..."
 
     # Create project directory
-    mkdir -p $project_dir
-    cd $project_dir
+    mkdir -p "./Mybirthchart"
+    cd "./Mybirthchart"
 
     # Create and activate virtual environment
     virtualenv venv
@@ -57,7 +57,12 @@ read -p "Proceed with setting up the environment? (y/n): " proceed
 if [[ $proceed == [Yy] ]]; then
     setup_environment
     echo "Setup completed successfully. You can now run the astrological calculations."
+    
+    # Run the Python script
+    python3 ../StarPie.py
+    
 else
     echo "Setup canceled by user."
     exit 1
 fi
+
